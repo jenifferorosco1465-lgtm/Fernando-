@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Fernando ❤️</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Trebuchet MS",Arial,sans-serif}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 78% 12%,rgba(255,255,255,.9) 0 2px,transparent 3px),
+    radial-gradient(circle at 15% 22%,rgba(255,255,255,.8) 0 1.5px,transparent 2.5px),
+    linear-gradient(160deg,#263b63 0%,#7189aa 42%,#e7b0a0 76%,#f3c7a8 100%);
+  color:#17233b; overflow-x:hidden; padding:20px 0 45px;
+}
+body:before,body:after{
+ content:"";position:fixed;border-radius:50%;pointer-events:none;opacity:.7;
+ box-shadow:80px 40px 0 rgba(255,255,255,.8),210px 15px 0 rgba(255,255,255,.65),330px 90px 0 rgba(255,255,255,.7),
+ 120px 170px 0 rgba(255,255,255,.55),280px 240px 0 rgba(255,255,255,.6);
+ width:3px;height:3px;left:10%;top:5%;animation:twinkle 3s infinite alternate;
+}
+body:after{left:55%;top:10%;animation-delay:1.3s}
+@keyframes twinkle{to{opacity:.25;transform:scale(.6)}}
+
+.screen{
+ width:min(92%,460px);margin:0 auto;position:relative;z-index:2;
+ background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.8);
+ border-radius:28px;padding:28px 20px;box-shadow:0 18px 45px rgba(24,35,59,.28);
+ text-align:center;animation:appear .7s ease;
+}
+.hidden{display:none}
+@keyframes appear{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+h1{font-size:34px;margin:5px 0 10px;color:#17233b}
+h2{font-size:27px;margin:4px 0 15px;color:#1d3155}
+p{line-height:1.6;font-size:16px}
+.small{font-size:14px;color:#53617a}
+.moon{font-size:82px;filter:drop-shadow(0 0 12px rgba(255,240,190,.7));animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.heart{font-size:62px;animation:beat 1.15s infinite;display:inline-block}
+@keyframes beat{50%{transform:scale(1.16)}}
+button{
+ border:0;border-radius:24px;padding:13px 21px;background:#203654;color:white;
+ font-size:15px;font-weight:bold;box-shadow:0 7px 17px rgba(32,54,84,.25);margin-top:12px;
+}
+button:active{transform:scale(.96)}
+.moto{
+ font-size:74px;display:inline-block;
+ filter:drop-shadow(0 5px 3px rgba(0,0,0,.2));
+ animation:ride 2.4s ease-in-out infinite alternate;
+}
+@keyframes ride{from{transform:translateX(-22px)}to{transform:translateX(22px)}}
+.flower{
+ margin:18px auto;padding:15px 12px;border-radius:22px;
+ background:linear-gradient(145deg,#18283f,#314d70);
+ color:white;box-shadow:0 10px 25px rgba(25,42,67,.22);
+}
+.bouquet{font-size:44px;letter-spacing:2px;margin-bottom:10px}
+.tags{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tag{background:#f7f0ed;color:#253653;border-radius:12px;padding:9px 7px;font-size:13px;font-weight:bold}
+.letter{
+ background:#fffaf2;border:1px solid #e4d5c5;border-radius:18px;padding:20px 18px;
+ text-align:left;box-shadow:0 5px 15px rgba(70,50,40,.1);font-family:Georgia,serif;
+}
+.letter p{font-size:15px;line-height:1.65;margin:0 0 13px}
+.signature{text-align:center;font-weight:bold;color:#253b5d;margin-top:17px}
+.blueflowers{font-size:27px;letter-spacing:4px;margin:14px 0}
+.footer{font-size:13px;margin-top:14px;color:#5d6980}
+.spark{position:fixed;z-index:1;font-size:20px;animation:fall 9s linear infinite;opacity:.75}
+@keyframes fall{from{transform:translateY(-40px) rotate(0);opacity:0}15%{opacity:.8}to{transform:translateY(110vh) rotate(360deg);opacity:0}}
+</style>
+</head>
+<body>
+
+<div class="spark" style="left:7%;animation-delay:0s">✦</div>
+<div class="spark" style="left:22%;animation-delay:2s">♡</div>
+<div class="spark" style="left:46%;animation-delay:4s">✦</div>
+<div class="spark" style="left:72%;animation-delay:1s">♡</div>
+<div class="spark" style="left:90%;animation-delay:5s">✦</div>
+
+<section class="screen" id="s1">
+  <div class="moon">🌙</div>
+  <div class="heart">♡</div>
+  <h1>Fernando...</h1>
+  <p>Preparé algo pequeño y especial para ti.</p>
+  <p class="small">No cierres todavía... ❤️</p>
+  <button onclick="show('s2')">✨ Toca para continuar</button>
+</section>
+
+<section class="screen hidden" id="s2">
+  <div class="moon" style="font-size:65px">🌙</div>
+  <h2>Algo que quiero que recuerdes</h2>
+  <div class="flower">
+    <div class="bouquet">💐💙🦋💙💐</div>
+    <div class="tags">
+      <div class="tag">Estoy orgullosa de ti. ♡</div>
+      <div class="tag">Tienes un gran corazón. ♡</div>
+      <div class="tag">Nunca dejes de luchar. ♡</div>
+      <div class="tag">Tus sueños importan. ♡</div>
+      <div class="tag">Eres más fuerte de lo que crees. ♡</div>
+      <div class="tag">Siempre puedes contar conmigo. ♡</div>
+      <div class="tag">Cada esfuerzo tiene recompensa. ♡</div>
+      <div class="tag">Sigue adelante, vas muy lejos. ♡</div>
+      <div class="tag">Me encanta verte luchar por lo que quieres. ♡</div>
+      <div class="tag">Gracias por existir, Fernando. ♡</div>
+    </div>
+  </div>
+  <button onclick="show('s3')">💙 Seguir</button>
+</section>
+
+<section class="screen hidden" id="s3">
+  <div class="moto">🏍️</div>
+  <h2>Y también quiero decirte...</h2>
+  <p>Que admiro tus ganas de salir adelante, tus sueños y todo el esfuerzo que haces para conseguirlos.</p>
+  <p>Espero que nunca dejes de creer en ti. Sigue siendo tú, porque eres increíble. ❤️</p>
+  <button onclick="show('s4')">🌟 Hay algo más...</button>
+</section>
+
+<section class="screen hidden" id="s4">
+  <div class="blueflowers">💙🌸🦋🌸💙</div>
+  <h2>Para ti, Fernando ❤️</h2>
+  <div class="letter">
+    <p>No sé exactamente en qué momento empezaste a convertirte en alguien especial para mí, pero me gusta mucho la forma en que poco a poco nos hemos ido conociendo.</p>
+    <p>Quizás todavía nos queda mucho por descubrir el uno del otro, pero disfruto cada conversación, cada momento y cada detalle que compartimos.</p>
+    <p>Quiero seguir conociéndote poquito a poquito, sin apresurar nada, y dejar que el tiempo nos muestre hasta dónde podemos llegar.</p>
+    <p><strong>Me quedaré hasta donde tú me lo permitas.</strong> Espero que no me pierdas, porque quiero seguir compartiendo momentos contigo, seguir riéndome contigo y seguir dándote mi cariño. ❤️</p>
+    <p>Poco a poco te iré mostrando todo ese cariño, con cada detalle, cada mensaje y cada momento... hasta convertir esos pequeños detalles en algo muy bonito.</p>
+    <p>Y sí, Fernando... <strong>te quiero mucho. ❤️</strong></p>
+    <div class="signature">Con mucho cariño,<br>para ti. 💙🦋</div>
+  </div>
+  <div class="blueflowers">🌸💙🌸</div>
+  <button onclick="show('s5')">🌙 Una última cosa...</button>
+</section>
+
+<section class="screen hidden" id="s5">
+  <div class="moon">🌙</div>
+  <div class="heart">❤️</div>
+  <h1>Gracias por estar</h1>
+  <p>Gracias por ser tú, por cada conversación, por cada risa y por todos esos pequeños momentos que poco a poco se vuelven especiales.</p>
+  <p><strong>Espero no perderte.</strong></p>
+  <p>Y mientras tú me lo permitas, aquí estaré, dándote poquito a poquito todo mi cariño. 🦋</p>
+  <div class="moto" style="font-size:55px">🏍️</div>
+  <h2>Te quiero mucho, Fernando. ❤️</h2>
+  <p class="footer">Hecho especialmente para ti ✨</p>
+</section>
+
+<script>
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
